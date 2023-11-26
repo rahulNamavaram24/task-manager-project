@@ -37,4 +37,4 @@ app.use(express.json())
 }
 
 start()
-app.use(pageNotFound)
+// app.use(pageNotFound)
