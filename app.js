@@ -6,11 +6,17 @@ const connectDB = require('./db/connect')
 require('dotenv').config()
 const pageNotFound = require('./middleware/not_found')
 const errorHandlingMiddleware = require('./middleware/error-handler')
+
+const cors = require("cors");
+
+
+
 // middlewares
 
 
 app.use(express.static('./public'))
 app.use(express.json())
+app.use(cors());
 
 
 // routes
