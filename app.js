@@ -5,6 +5,7 @@ const tasks = require('./routes/tasks')
 const connectDB = require('./db/connect')
 require('dotenv').config()
 const pageNotFound = require('./middleware/not_found')
+const errorHandlingMiddleware = require('./middleware/error-handler')
 // middlewares
 
 
@@ -18,7 +19,11 @@ app.use(express.json())
     // })
     
     app.use('/api/v1/tasks', tasks)
+
+    app.use(pageNotFound)
     
+    app.use(errorHandlingMiddleware)
+
     // app.get('/api/v1/tasks')             => get all the tasks        
     // app.post('/api/v1/tasks')            => create a new task
     // app.get('/api/v1/tasks/:id')         => get single task
@@ -37,4 +42,3 @@ app.use(express.json())
 }
 
 start()
-// app.use(pageNotFound)
