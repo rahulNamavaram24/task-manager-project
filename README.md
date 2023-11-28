@@ -1,6 +1,9 @@
-# Task Manager - A JavaScript Backend Application
+# [Task Manager - A JavaScript Backend Application](https://task-manager-2m23.onrender.com)
 
 This project is a simple task manager backend built using JavaScript, Node.js, Express, and MongoDB.
+
+![image](https://github.com/rahulNamavaram24/task-manager-project/assets/63719351/34077aca-f000-40d3-825d-b57dcae89ae7)
+
 
 ## Table of Contents
 
@@ -16,6 +19,9 @@ This project is a simple task manager backend built using JavaScript, Node.js, E
 - MongoDB database for data storage.
 - Express server for handling HTTP requests.
 - Error handling and validation.
+
+![image](https://github.com/rahulNamavaram24/task-manager-project/assets/63719351/75e0a16c-4970-450b-8b6a-6510f42648b6)
+
 
 ## Getting Started
 
@@ -37,7 +43,7 @@ Before you begin, ensure you have the following installed on your machine:
 2. Install dependencies:
 
    ```bash
-   cd task-manager-backend
+   cd task-manager-project
    npm install
    ```
 
