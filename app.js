@@ -6,7 +6,7 @@ const connectDB = require('./db/connect')
 require('dotenv').config()
 const pageNotFound = require('./middleware/not_found')
 const errorHandlingMiddleware = require('./middleware/error-handler')
-
+const path = require("path");
 const cors = require("cors");
 
 
