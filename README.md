@@ -1,4 +1,6 @@
-# [Task Manager - A JavaScript Backend Application](https://task-manager-2m23.onrender.com)
+# Task Manager - A JavaScript Backend Application
+
+[Live Demo](https://task-manager-2m23.onrender.com)
 
 This project is a simple task manager backend built using JavaScript, Node.js, Express, and MongoDB.
 
