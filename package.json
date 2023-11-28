@@ -1,5 +1,5 @@
 {
-  "name": "jobs",
+  "name": "task-manager",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=20.10.0 <21.0.0"
   }
 }

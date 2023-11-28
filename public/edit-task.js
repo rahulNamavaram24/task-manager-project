@@ -12,7 +12,9 @@ const showTask = async () => {
   try {
     const {
       data: { task },
-    } = await axios.get(`/api/v1/tasks/${id}`)
+    } = await axios.get(
+      `https://task-manager-2m23.onrender.com/api/v1/tasks/${id}`
+    );
     const { _id: taskID, completed, name } = task
 
     taskIDDOM.textContent = taskID
@@ -37,10 +39,13 @@ editFormDOM.addEventListener('submit', async (e) => {
 
     const {
       data: { task },
-    } = await axios.patch(`/api/v1/tasks/${id}`, {
-      name: taskName,
-      completed: taskCompleted,
-    })
+    } = await axios.patch(
+      `https://task-manager-2m23.onrender.com/api/v1/tasks/${id}`,
+      {
+        name: taskName,
+        completed: taskCompleted,
+      }
+    );
 
     const { _id: taskID, completed, name } = task
 
